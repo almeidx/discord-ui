@@ -15,9 +15,9 @@ export const Grid = styled.div`
   grid-template-rows: 46px auto 52px;
 
   grid-template-areas:
-    'GL GN CI CI'
-    'GL CL CD UL'
-    'GL UI CD UL';
+    "GL GN CI CI"
+    "GL CL CD UL"
+    "GL UI CD UL";
 
-  height: 100%
+  height: 100%;
 `;

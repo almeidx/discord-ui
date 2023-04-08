@@ -1,15 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import {
-  Container,
-  Profile,
-  Avatar,
-  UserData,
-  Icons,
-  MicIcon,
-  HeadsetIcon,
-  SettingsIcon,
-} from './styles';
+import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadsetIcon, SettingsIcon } from "./styles";
 
 const UserInfo: FC = () => {
   return (

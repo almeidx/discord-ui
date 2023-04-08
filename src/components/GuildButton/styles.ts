@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { ButtonOptions } from '.';
+import { ButtonOptions } from ".";
 
 export const Button = styled.button<ButtonOptions>`
   display: flex;
@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonOptions>`
 
   margin-bottom: 8px;
 
-  background-color: ${(p: ButtonOptions) => `var(--${p.isHome ? 'quinary' : 'primary'})`};
+  background-color: ${(p: ButtonOptions) => `var(--${p.isHome ? "quinary" : "primary"})`};
 
   position: relative;
   cursor: pointer;
@@ -35,8 +35,8 @@ export const Button = styled.button<ButtonOptions>`
     background-color: var(--white);
     border-radius: 50%;
 
-    content: '';
-    display: ${(p: ButtonOptions) => p.hasNotifications ? 'inline' : 'none'};
+    content: "";
+    display: ${(p: ButtonOptions) => (p.hasNotifications ? "inline" : "none")};
   }
 
   &::after {
@@ -58,8 +58,8 @@ export const Button = styled.button<ButtonOptions>`
     font-weight: bold;
     color: var(--white);
 
-    content: '${(p: ButtonOptions) => p.mentions && p.mentions}';
-    display: ${(p: ButtonOptions) => p.mentions && p.mentions > 0 ? 'inline' : 'none'}
+    content: "${(p: ButtonOptions) => p.mentions && p.mentions}";
+    display: ${(p: ButtonOptions) => (p.mentions && p.mentions > 0 ? "inline" : "none")};
   }
 
   transition: border-radius 0.2s, background-color 0.2s;
@@ -67,6 +67,6 @@ export const Button = styled.button<ButtonOptions>`
   &.active,
   &:hover {
     border-radius: 16px;
-    background-color: ${(p: ButtonOptions) => `var(--${p.isHome ? 'quinary' : 'discord'})`}
-  };
+    background-color: ${(p: ButtonOptions) => `var(--${p.isHome ? "quinary" : "discord"})`};
+  }
 `;

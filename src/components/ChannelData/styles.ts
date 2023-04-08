@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { AlternateEmail } from 'styled-icons/material'
+import styled from "styled-components";
+import { AlternateEmail } from "styled-icons/material";
 
 export const Container = styled.div`
   grid-area: CD;
@@ -55,7 +55,6 @@ export const Messages = styled.div`
 
   max-height: calc(100vh - 46px - 68px);
   overflow-y: scroll;
-
 
   ::-webkit-scrollbar {
     width: 4px;

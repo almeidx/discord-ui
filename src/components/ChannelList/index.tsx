@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import ChannelButton from '../ChannelButton';
+import ChannelButton from "../ChannelButton";
 
-import { Category, Container, CreateChannelIcon } from './styles';
+import { Category, Container, CreateChannelIcon } from "./styles";
 
 const ChannelList: FC = () => {
   return (
@@ -19,6 +19,6 @@ const ChannelList: FC = () => {
       <ChannelButton channelName="things" />
     </Container>
   );
-}
+};
 
 export default ChannelList;

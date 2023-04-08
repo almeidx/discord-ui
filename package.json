@@ -1,49 +1,34 @@
 {
   "name": "discord-ui",
-  "version": "1.0.0",
   "private": true,
-  "homepage": "https://discord.almeidx.me/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "cross-env": "^7.0.2",
-    "gh-pages": "^3.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.1.1",
-    "styled-icons": "^10.2.1",
-    "typescript": "~3.7.2"
-  },
+  "homepage": "https://discord.almeidx.dev",
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
-    "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "fmt": "yarn format",
+    "format": "prettier --write .",
+    "preview": "vite preview",
+    "update": "yarn upgrade-interactive"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "trailingComma": "all"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9",
+    "styled-icons": "^10.47.0"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.0"
-  }
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prettier": "^2.8.7",
+    "typescript": "~5.0.4",
+    "vite": "^4.2.1"
+  },
+  "packageManager": "yarn@3.5.0+sha224.8f42459cf3e9d5e6b89b7f432466d6b4017c6d948798ba16725e047f"
 }

@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { Container, Role, User, Avatar } from './styles';
+import { Container, Role, User, Avatar } from "./styles";
 
 interface UserOptions {
   displayName: string;
@@ -10,7 +10,7 @@ interface UserOptions {
 const UserRow: FC<UserOptions> = ({ displayName, isBot }) => {
   return (
     <User>
-      <Avatar className={isBot ? 'bot' : ''} />
+      <Avatar className={isBot ? "bot" : ""} />
 
       <strong>{displayName}</strong>
 

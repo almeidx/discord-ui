@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { Container, Description, HashtagIcon, Separator, Title } from './styles';
+import { Container, Description, HashtagIcon, Separator, Title } from "./styles";
 
 const ChannelInfo: FC = () => {
   return (
@@ -14,6 +14,6 @@ const ChannelInfo: FC = () => {
       <Description>The general chat</Description>
     </Container>
   );
-}
+};
 
 export default ChannelInfo;

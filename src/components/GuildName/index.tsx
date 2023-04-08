@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { Container, ExpandIcon, Title } from './styles';
+import { Container, ExpandIcon, Title } from "./styles";
 
 const GuildName: FC = () => {
   return (

@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import GuildButton from '../GuildButton';
+import GuildButton from "../GuildButton";
 
-import { Container, Separator } from './styles';
+import { Container, Separator } from "./styles";
 
 const GuildList: FC = () => {
   return (
