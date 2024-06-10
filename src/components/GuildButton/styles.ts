@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { ButtonOptions } from ".";
+import type { ButtonOptions } from ".";
 
 export const Button = styled.button<ButtonOptions>`
   display: flex;

@@ -1,19 +1,25 @@
-import React, { FC } from "react";
+import React, { type FC } from "react";
 
-import { Container, Description, HashtagIcon, Separator, Title } from "./styles";
+import {
+	Container,
+	Description,
+	HashtagIcon,
+	Separator,
+	Title,
+} from "./styles";
 
 const ChannelInfo: FC = () => {
-  return (
-    <Container>
-      <HashtagIcon />
+	return (
+		<Container>
+			<HashtagIcon />
 
-      <Title>general</Title>
+			<Title>general</Title>
 
-      <Separator />
+			<Separator />
 
-      <Description>The general chat</Description>
-    </Container>
-  );
+			<Description>The general chat</Description>
+		</Container>
+	);
 };
 
 export default ChannelInfo;

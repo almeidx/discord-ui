@@ -1,34 +1,27 @@
 {
-  "name": "discord-ui",
-  "private": true,
-  "homepage": "https://discord.almeidx.dev",
-  "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite",
-    "fmt": "yarn format",
-    "format": "prettier --write .",
-    "preview": "vite preview",
-    "update": "yarn upgrade-interactive"
-  },
-  "prettier": {
-    "printWidth": 120,
-    "tabWidth": 2,
-    "trailingComma": "all"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9",
-    "styled-icons": "^10.47.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "@types/styled-components": "^5.1.26",
-    "@vitejs/plugin-react": "^3.1.0",
-    "prettier": "^2.8.7",
-    "typescript": "~5.0.4",
-    "vite": "^4.2.1"
-  },
-  "packageManager": "yarn@3.5.0+sha224.8f42459cf3e9d5e6b89b7f432466d6b4017c6d948798ba16725e047f"
+	"private": true,
+	"scripts": {
+		"build": "tsc && vite build",
+		"dev": "vite",
+		"fmt": "pnpm format",
+		"lint": "biome check",
+		"format": "biome check --write --unsafe",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"styled-components": "^5.3.9",
+		"styled-icons": "^10.47.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.1",
+		"@types/react": "^18.0.33",
+		"@types/react-dom": "^18.0.11",
+		"@types/styled-components": "^5.1.26",
+		"@vitejs/plugin-react": "^3.1.0",
+		"typescript": "~5.4.5",
+		"vite": "^4.2.1"
+	},
+	"packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }

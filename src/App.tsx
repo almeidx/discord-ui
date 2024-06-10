@@ -3,13 +3,13 @@ import Layout from "./components/Layout";
 import GlobalStyles from "./styles/global";
 
 function App() {
-  return (
-    <>
-      <Layout />
+	return (
+		<>
+			<Layout />
 
-      <GlobalStyles />
-    </>
-  );
+			<GlobalStyles />
+		</>
+	);
 }
 
 export default App;
